@@ -516,3 +516,8 @@ ul.childpages {  list-style-type: disc;  margin-left: 20px;  }
 /*****************font family**************************/
 #sidebar .ske-title,#footer .sitename{ font-family: 'Roboto Condensed',sans-serif;font-size: 20px; font-weight: 200; text-transform: capitalize;  } 
 #contactform label{  font-family:'Roboto Condensed', sans-serif;  }
+
+/* removes bullet points from slideshow li, for slidejs 3*/
+.slidesjs-pagination-item{
+list-style-type: none;
+}

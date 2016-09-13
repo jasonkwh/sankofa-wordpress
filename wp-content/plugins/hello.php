@@ -1,20 +1,20 @@
 <?php
 /**
  * @package Sankofa Version
- * @version 1.0.12
+ * @version 1.0.14
  */
 /*
 Plugin Name: Sankofa Version
 Plugin URI: https://github.com/jasonkwh
 Description: To display the version of Sankofa-wordpress...
 Author: Jason Huang
-Version: 1.0.12
+Version: 1.0.14
 Author URI: https://github.com/jasonkwh
 */
 
 function hello_dolly_get_lyric() {
 	/** These are the lyrics to Hello Dolly */
-	$lyrics = "Sankofa-wordpress v1.0.12, by Jason Huang";
+	$lyrics = "Sankofa-wordpress v1.0.14, by Jason Huang";
 
 	// Here we split it into lines
 	$lyrics = explode( "\n", $lyrics );

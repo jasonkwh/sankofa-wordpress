@@ -13,6 +13,32 @@
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
 <head>
+    <style>
+    /* Prevents slides from flashing */
+    #slides {
+      display:none;
+    }
+    </style>
+    <script src="/wp-content/themes/invert-lite/js/jquery-3.1.0.min.js"></script>
+    <script src="/wp-content/themes/invert-lite/js/jquery.slides.min.js"></script>
+    <script>
+    $(function(){
+      $("#slides").slidesjs({
+          play: {
+            active: false,
+            effect: "slide",
+            interval: 4000,
+          auto: true,
+          swap: true,
+          pauseOnHover: false,
+          restartDelay: 4000
+    },
+        width: 1600,
+        height: 634,
+        navigation: false
+      });
+    });
+  </script>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
@@ -58,14 +84,11 @@
 	<!-- #header -->
 	
 	<!-- header image section -->
-	<div class="flexslider">
-		<div class="post">
-			<?php if( get_header_image() ) { ?>
-				<img alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" class="default-slider-image"  src="<?php header_image(); ?>" />
-			<?php } else { ?>
-				<img alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" class="default-slider-image"  src="<?php echo esc_url(get_template_directory_uri().'/images/invert.jpg'); ?>" />
-			<?php } ?>
-		</div>
-	</div>
+    <div class="flexslider">
+        <div id="slides">
+        <img src="http://127.0.0.1/wp-content/uploads/2016/09/bg.jpg">
+        <img src="http://127.0.0.1/wp-content/uploads/2016/09/bg.jpg">
+        </div>
+    </div>
 
 <div id="main" class="clearfix">
