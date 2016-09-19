@@ -7,7 +7,7 @@
  *
  */
 ?>
-<div id="full-twitter-box"></div></div>
+<!-- <div id="full-twitter-box"></div></div> -->
 <!-- #main --> 
 
 	<!-- #footer -->
@@ -24,8 +24,8 @@
 		<div class="third_wrapper">
 			<div class="container">
 				<div class="row-fluid">
-					<div id="copyright" class="copyright span6"> ACN 602 218 495 | AFSL No. 473 202</div>
-					<div class="owner span6">© <?php echo date("Y"); ?> <strong>Sankofa Funds Management Pty Ltd</strong></div>
+					<div id="copyright" class="copyright span6">© <?php echo date("Y"); ?> <strong>Sankofa Funds Management Pty Ltd</strong></div>
+					<div class="owner span6"> ACN 602 218 495 | AFSL No. 473 202</div>
 					<div class="clear"></div>
 				</div>
 			</div>

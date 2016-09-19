@@ -93,3 +93,6 @@ require_once(ABSPATH . 'wp-settings.php');
 /* PHP Memory for Alibaba Cloud */
 define( 'WP_MEMORY_LIMIT', '32' );
 define( 'WP_MAX_MEMORY_LIMIT', '64' );
+
+/* Custom Tags */
+#define( 'CUSTOM_TAGS', true );

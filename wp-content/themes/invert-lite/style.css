@@ -521,3 +521,33 @@ ul.childpages {  list-style-type: disc;  margin-left: 20px;  }
 .slidesjs-pagination-item{
 list-style-type: none;
 }
+
+/* Google Maps */
+#map {
+  height: 450px;
+  position: relative;
+  width: 100%;
+}
+
+.maps-frame {
+  height: 450px;
+  width: 100%;
+}
+
+/* Sankofa Team */
+#sankofa-team {
+    display: block;
+    margin: auto;
+    height: auto;
+    width: 75%;
+}
+
+#sankofa-team img {
+    height: 280px;
+    width: auto;
+}
+
+#sankofa-team-text {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}

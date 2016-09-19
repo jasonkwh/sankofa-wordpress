@@ -58,7 +58,7 @@
 					<div class="span4">
 						<h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
 						<?php the_excerpt(); ?>
-						<div class="continue"><a href="<?php the_permalink(); ?>"><?php _e('Read More &rarr;','invert-lite');?></a></div>		  
+						<div class="continue"><a href="<?php the_permalink(); ?>"><?php _e('查看全文 &rarr;','invert-lite');?></a></div>		  
 					</div>
 				<?php endwhile; ?>
 				<!-- end of the loop -->
@@ -134,5 +134,71 @@
 		</div>
 	</div>
 </div>
+
+<!-- Google Maps -->
+<div id="map"></div>
+    <script>
+        
+        var marker;
+        
+        function initMap() {
+            var myLatLng = {lat: -33.86859, lng: 151.20930};
+          
+            // Specify features and elements to define styles.
+            var styleArray = [
+              {
+                featureType: "all",
+                stylers: [
+                 { saturation: -80 }
+                ]
+              },{
+                featureType: "road.arterial",
+                elementType: "geometry",
+                stylers: [
+                  { hue: "#00ffee" },
+                  { saturation: 50 }
+                ]
+              },{
+                featureType: "poi.business",
+                elementType: "labels",
+                stylers: [
+                  { visibility: "off" }
+                ]
+              }
+            ];
+
+            // Create a map object and specify the DOM element for display.
+            var map = new google.maps.Map(document.getElementById('map'), {
+              center: myLatLng,
+              scrollwheel: false,
+              // Apply the map style array to the map.
+              styles: styleArray,
+              zoom: 17
+            });
+
+            // Create a marker and set its position.
+            marker = new google.maps.Marker({
+              map: map,
+                draggable: false,
+                animation: google.maps.Animation.DROP,
+              position: myLatLng,
+              title: 'Sankofa Funds Management Pty Ltd'
+            });
+
+            marker.addListener('click', toggleBounce);
+          }
+        
+        function toggleBounce() {
+            if (marker.getAnimation() !== null) {
+              marker.setAnimation(null);
+            } else {
+              marker.setAnimation(google.maps.Animation.BOUNCE);
+            }
+          }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhEcnugr5FO-UyWH4eq2I9NOqiC8SOuQ4&callback=initMap"
+    async defer></script>
+
 <?php } ?>
 <?php get_footer(); ?>

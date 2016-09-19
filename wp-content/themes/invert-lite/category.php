@@ -13,7 +13,7 @@ get_header(); ?>
 			<div class="row-fluid">
 				<div class="container_inner clearfix">
 					<h1 class="title">
-						<?php printf( __( 'Category Archives: %s', 'invert-lite' ), '<span>' . single_cat_title( '', false ) . '</span>' );?> 	
+						<?php printf( __( '%s', 'invert-lite' ), '<span>' . single_cat_title( '', false ) . '</span>' );?> 	
 					</h1>
 					<?php
 						if( get_theme_mod('breadcrumb_sec', 'on') == 'on' ) {

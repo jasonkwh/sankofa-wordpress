@@ -30,7 +30,7 @@
 	<div class="skepost">
 		<?php the_excerpt(); ?> 
 		<?php wp_link_pages(__('<p><strong>Pages:</strong> ','invert-lite'), '</p>', __('number','invert-lite')); ?>
-		<div class="continue"><a href="<?php the_permalink(); ?>"><?php _e('Read More &rarr;','invert-lite');?></a></div>		  
+		<div class="continue"><a href="<?php the_permalink(); ?>"><?php _e('查看全文 &rarr;','invert-lite');?></a></div>		  
 	</div>
 	<!-- skepost -->
 	

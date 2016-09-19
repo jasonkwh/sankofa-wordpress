@@ -24,11 +24,11 @@ get_header(); ?>
 					<h1 class="title">
 						<?php
 							if ( is_day() ) :
-								printf( __( 'Daily Archives: <span>%s</span>', 'invert-lite' ), get_the_date() );
+								printf( __( '<span>%s</span>', 'invert-lite' ), get_the_date() );
 								elseif ( is_month() ) :
-								printf( __( 'Monthly Archives: <span>%s</span>', 'invert-lite' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'invert-lite' ) ) );
+								printf( __( '<span>%s</span>', 'invert-lite' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'invert-lite' ) ) );
 								elseif ( is_year() ) :
-								printf( __( 'Yearly Archives: <span>%s</span>', 'invert-lite' ), get_the_date( _x( 'Y', 'yearly archives date format', 'invert-lite' ) ) );
+								printf( __( '<span>%s</span>', 'invert-lite' ), get_the_date( _x( 'Y', 'yearly archives date format', 'invert-lite' ) ) );
 								else :
 								_e( 'Blog Archives', 'invert-lite' );
 							endif;
