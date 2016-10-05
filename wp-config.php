@@ -22,22 +22,22 @@
 /** The name of the database for WordPress */
 //define('WP_CACHE', true); //Added by WP-Cache Manager
 define( 'WPCACHEHOME', '/Applications/MAMP/htdocs/wp-content/plugins/wp-super-cache/' ); //Added by WP-Cache Manager
-define('DB_NAME', 'wordpress');
+define('DB_NAME', 'sankofa-family');
 
 /** MySQL database username */
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'root');
+define('DB_PASSWORD', 'Sankofa809');
 
 /** MySQL hostname */
 define('DB_HOST', '127.0.0.1');
 
 /** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'latin1');
+define('DB_CHARSET', 'utf8mb4');
 
 /** The Database Collate type. Don't change this if in doubt. */
-define('DB_COLLATE', 'latin1_swedish_ci');
+define('DB_COLLATE', '');
 
 /**#@+
  * Authentication Unique Keys and Salts.
